@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using NSE.Carrinho.API.Data;
 using NSE.Carrinho.API.Model;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace NSE.Carrinho.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize]
     public class CarrinhoController : MainController
     {
         private readonly IAspNetUser _user;

@@ -8,7 +8,7 @@ namespace NSE.Carrinho.API.Model
 {
     public class CarrinhoCliente
     {
-        internal const int MAX_QUANTIDADE_ITEM = 15;
+        internal const int MAX_QUANTIDADE_ITEM = 5;
         public Guid Id { get; set; }
         public Guid ClienteId { get; set; }
         public decimal ValorTotal { get; set; }
