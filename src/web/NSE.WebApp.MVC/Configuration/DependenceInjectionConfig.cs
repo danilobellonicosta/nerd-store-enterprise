@@ -34,7 +34,7 @@ namespace NSE.WebApp.MVC.Configuration
                 .AddPolicyHandler(PollyConfig.PollyConfiguration())
                 .AddTransientHttpErrorPolicy(p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));
 
-            services.AddHttpClient<ICarrinhoService, CarrinhoService>()
+            services.AddHttpClient<IComprasBffService, ComprasBffService>()
                .AddHttpMessageHandler<HttpClientAuthorizationDelegationHandler>()
                .AddPolicyHandler(PollyConfig.PollyConfiguration())
                .AddTransientHttpErrorPolicy(p => p.CircuitBreakerAsync(5, TimeSpan.FromSeconds(30)));

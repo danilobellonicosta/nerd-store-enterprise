@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Polly.CircuitBreaker;
 using Refit;
-using System;
 using System.Net;
 using System.Threading.Tasks;
 

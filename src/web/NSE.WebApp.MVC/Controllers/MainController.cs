@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NSE.Core.Comunication;
 using NSE.WebApp.MVC.Models;
 using System.Linq;
 
